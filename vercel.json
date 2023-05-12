@@ -1,1 +1,14 @@
-{"orgId":"PmUMOTPUuGdkgSzOIQUedAy3","projectId":"prj_KKVfEDkjX9Bw7MN2sgDECpGz9AB1"}
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "path/to/your/app",
+      "use": "@vercel/node@1.12.0",
+      "config": {
+        "production": {
+          "command": "npm install --legacy-peer-deps && npm run build"
+        }
+      }
+    }
+  ]
+}
